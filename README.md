@@ -7,11 +7,11 @@ Initiation au framework hadoop et au patron MapReduce, utilisation de docker pou
 -------------------------------------------------------------------------
 ### Outils et Versions
 
-Apache Hadoop Version: 2.7.2.
-Docker Version 17.09.1
-IntelliJ IDEA Version Ultimate 2016.1 (ou tout autre IDE de votre choix)
-Java Version 1.8.
-Unix-like ou Unix-based Systems (Divers Linux et MacOS)
+1. Apache Hadoop Version: 2.7.2.
+2. Docker Version 17.09.1
+3. IntelliJ IDEA Version Ultimate 2016.1 (ou tout autre IDE de votre choix)
+4. Java Version 1.8.
+5. Unix-like ou Unix-based Systems (Divers Linux et MacOS)
 
 -------------------------------------------------------------------------
 ### Hadoop
