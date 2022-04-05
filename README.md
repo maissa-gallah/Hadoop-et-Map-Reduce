@@ -1,19 +1,20 @@
-# Hadoop-et-Map-Reduce
 
-### Objectifs 
 
-Initiation au framework hadoop et au patron MapReduce, utilisation de docker pour lancer un cluster hadoop de 3 noeuds.
+# Hadoop Map/Reduce
 
--------------------------------------------------------------------------
-### Outils et Versions
+I am using this docker image to create a cluster of a master node (Namenode) and two worker nodes (Datanodes).
 
-1. Apache Hadoop Version: 2.7.2.
-2. Docker Version 17.09.1
-3. IntelliJ IDEA Version Ultimate 2016.1 (ou tout autre IDE de votre choix)
-4. Java Version 1.8.
-5. Unix-like ou Unix-based Systems (Divers Linux et MacOS)
+```
+docker pull liliasfaxi/spark-hadoop:hv-2.7.2
+```
 
--------------------------------------------------------------------------
-### Hadoop
-Apache Hadoop est un framework open-source pour stocker et traiter les données volumineuses sur un cluster. Il est utilisé par un grand nombre de contributeurs et utilisateurs. Il a une licence Apache 2.0.
+I worked with a simple MapReduce program which is WordCount. It basically calculates the number of words in a given file, by breaking down the calculation into two steps:
+
+1. The Mapping step, which splits the text into words and outputs a text stream, where each line contains the word found, followed by the value 1 (basically saying the word has been found once).
+2. The Reducing step, which sums the 1s for each word, to find the total number of occurrences of the word in the text.
+
+
+**Note**
+
+You can launch the map/reduce job locally (for testing) or on the cluster.
 
